@@ -1,6 +1,6 @@
 # INTRODUCTION #
 
-The **Vroom** Php extension is an external library that provides various extension functions to the user-space area.
+The **Vroom** Php extension is an external library that provides various extension functions for the user-space area.
 
 # LIMITATIONS #
 
