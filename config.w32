@@ -1,0 +1,11 @@
+// $Id$
+// vim:ft=javascript
+
+ARG_ENABLE ( "vroom", "Vroom utilities support", "no" ) ;
+
+if (PHP_VROOM == "yes") 
+   {
+	EXTENSION ( "vroom", "thrak.c array_helpers.c ini_helpers.c string_helpers.c memory_helpers.c php_vroom.c vroom.c array.c array_buffer.c data.c minify.c string.c timer.c zval.c" ) ;
+	PHP_INSTALL_HEADERS ( "ext/vroom/", "php_vroom.h array.h data.h minify.h string.h timer.h zval.h" ) ;
+	AC_DEFINE ( 'HAVE_VROOM', 1, 'Have Vroom support' ) ;
+    }
