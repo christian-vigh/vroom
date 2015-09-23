@@ -751,9 +751,9 @@ static zend_always_inline zend_bool  packer_check_zstring ( zval *  data TSRMLS_
 	data_dwpack, ddpack, dqpack - Packs word/dword/qword values.
 	
     PROTOTYPE
-	$binstr 	=  data_dwpack ( $array, [ count, [ $endianness = DATA_MACHINE_ENDIANNESS, $count ] ] ) ;
-	$binstr 	=  data_ddpack ( $array, [ count, [ $endianness = DATA_MACHINE_ENDIANNESS, $count ] ] ) ;
-	$binstr 	=  data_dqpack ( $array, [ count, [ $endianness = DATA_MACHINE_ENDIANNESS, $count ] ] ) ;
+	$binstr 	=  data_dwpack ( $array, [ count, [ $endianness = DATA_MACHINE_ENDIANNESS ] ] ) ;
+	$binstr 	=  data_ddpack ( $array, [ count, [ $endianness = DATA_MACHINE_ENDIANNESS ] ] ) ;
+	$binstr 	=  data_dqpack ( $array, [ count, [ $endianness = DATA_MACHINE_ENDIANNESS ] ] ) ;
 	
 	$binstr 	=  data_dwlpack ( $array, $count ) ;
 	$binstr 	=  data_ddlpack ( $array, $count ) ;

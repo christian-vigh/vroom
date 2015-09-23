@@ -299,11 +299,11 @@ PHP_FUNCTION(string_endswith)
 	string_explode, string_implode - Similar to the explode()/implode functions.
 	
     PROTOTYPE
-	$array 	=  string_explode ( $separator, $value [ [ [ [ $left [, $right ] ], $options ], $callback ] ) ;
-	$string	=  string_implode ( $separator, $array [ [ [ [ $left [, $right ] ], $options ], $callback ] ) ;
+	$array 	=  string_explode ( $separator, $value [ [ [ , $left [, $right ] ], $options ], $callback ] ) ;
+	$string	=  string_implode ( $separator, $array [ [ [ , $left [, $right ] ], $options ], $callback ] ) ;
 	
     DESCRIPTION
-	Behaves similarly to the standard PHP function explode(), with a few enhancements :
+	Behaves similarly to the standard PHP functions implode()/explode(), with a few enhancements :
 	- Multiple separators can be given (in this case, $separator must be an array, not a string)
 	- Values must be prepended or appended to the exploded string ($left / $right)
 	- Several operations can be applied to each expanded value ($options).
